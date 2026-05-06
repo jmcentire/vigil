@@ -21,6 +21,9 @@ kill_timeout = 30
 [build]
   dockerfile = "Dockerfile"
 
+[deploy]
+  release_command = "vigil migrate"
+
 [env]
   VIGIL_API_HOST = "0.0.0.0"
   VIGIL_API_PORT = "8080"
