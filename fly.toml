@@ -1,0 +1,65 @@
+# vigil deployment — single-instance, off-path. Single shared-cpu-1x VM
+# with a 1GB volume for the baseline snapshot. Postgres lives in a
+# separate Neon project (or a shared stack-observability cluster).
+#
+# `fly deploy` from the repo root deploys this. First-time setup:
+#
+#     flyctl apps create vigil
+#     flyctl volumes create vigil_data --region ord --size 1
+#     flyctl secrets set REEVE_DATABASE_URL=... VIGIL_DATABASE_URL=...
+#     flyctl deploy
+#
+# After first deploy, `flyctl ssh console -C 'vigil migrate'` to apply
+# the schema migration against VIGIL_DATABASE_URL.
+
+app = "vigil"
+primary_region = "ord"
+
+kill_signal = "SIGTERM"
+kill_timeout = 30
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  VIGIL_API_HOST = "0.0.0.0"
+  VIGIL_API_PORT = "8080"
+  VIGIL_BASELINE_SNAPSHOT_PATH = "/var/lib/vigil/baselines.json"
+  VIGIL_LOG_LEVEL = "info"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+  auto_stop_machines = false
+  auto_start_machines = false
+  min_machines_running = 1
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+    force_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [services.concurrency]
+    type = "connections"
+    hard_limit = 50
+    soft_limit = 25
+
+  [[services.http_checks]]
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "10s"
+    method = "get"
+    path = "/v1/health"
+
+[[mounts]]
+  source = "vigil_data"
+  destination = "/var/lib/vigil"
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 512
