@@ -1,0 +1,546 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "vigil",
+    "description": "Code map exported from Kindex for vigil.",
+    "languages": [
+      "Python"
+    ],
+    "frameworks": [],
+    "analyzedAt": "2026-05-24T15:09:35",
+    "gitCommitHash": "4453a8a23e5245b729417db32da0c47248e96811"
+  },
+  "nodes": [
+    {
+      "id": "code-mod-vigil-869560954257",
+      "type": "file",
+      "name": "src/vigil/types.py",
+      "filePath": "src/vigil/types.py",
+      "summary": "Language: Python | Path: src/vigil/types.py | ~87 lines ## Classes - Anomaly",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 4,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "artifact",
+        "toolTier": "C"
+      }
+    },
+    {
+      "id": "code-mod-vigil-7a440be1b83d",
+      "type": "file",
+      "name": "src/vigil/api.py",
+      "filePath": "src/vigil/api.py",
+      "summary": "Language: Python | Path: src/vigil/api.py | ~225 lines ## Classes - AnomalyList(BaseModel)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 7,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "artifact",
+        "toolTier": "C"
+      }
+    },
+    {
+      "id": "code-mod-vigil-5496c4d6925c",
+      "type": "file",
+      "name": "src/vigil/baseline.py",
+      "filePath": "src/vigil/baseline.py",
+      "summary": "Language: Python | Path: src/vigil/baseline.py | ~291 lines ## Classes - BaselineStore",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 3,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "artifact",
+        "toolTier": "C"
+      }
+    },
+    {
+      "id": "code-mod-vigil-25dc48390531",
+      "type": "file",
+      "name": "src/vigil/config.py",
+      "filePath": "src/vigil/config.py",
+      "summary": "Language: Python | Path: src/vigil/config.py | ~89 lines ## Classes - Config",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 3,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "artifact",
+        "toolTier": "C"
+      }
+    },
+    {
+      "id": "code-mod-vigil-9e4449f82f9b",
+      "type": "file",
+      "name": "src/vigil/ingest.py",
+      "filePath": "src/vigil/ingest.py",
+      "summary": "Language: Python | Path: src/vigil/ingest.py | ~294 lines ## Classes - IngestError(Exception)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 7,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "artifact",
+        "toolTier": "C"
+      }
+    },
+    {
+      "id": "code-mod-vigil-069327c12223",
+      "type": "file",
+      "name": "src/vigil/persist.py",
+      "filePath": "src/vigil/persist.py",
+      "summary": "Language: Python | Path: src/vigil/persist.py | ~306 lines ## Functions - connect(conninfo: str) -> Iterator[psycopg.Connection]",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 10,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "artifact",
+        "toolTier": "C"
+      }
+    },
+    {
+      "id": "code-mod-vigil-c296d9fbf82f",
+      "type": "file",
+      "name": "src/vigil/cli.py",
+      "filePath": "src/vigil/cli.py",
+      "summary": "Language: Python | Path: src/vigil/cli.py | ~341 lines ## Functions - baseline(as_json: bool) -> None",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 9,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "artifact",
+        "toolTier": "C"
+      }
+    },
+    {
+      "id": "code-mod-vigil-1cb51d9325c6",
+      "type": "file",
+      "name": "src/vigil/__init__.py",
+      "filePath": "src/vigil/__init__.py",
+      "summary": "Language: Python | Path: src/vigil/__init__.py | ~14 lines",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "artifact",
+        "toolTier": "C"
+      }
+    },
+    {
+      "id": "code-mod-vigil-7d9229b9e65e",
+      "type": "file",
+      "name": "src/vigil/detect.py",
+      "filePath": "src/vigil/detect.py",
+      "summary": "Language: Python | Path: src/vigil/detect.py | ~111 lines ## Functions - compute_pattern_id(key: AnomalyKey, when: datetime) -> str",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 3,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "artifact",
+        "toolTier": "C"
+      }
+    },
+    {
+      "id": "code-sym-vigil-ba8af4c5e049",
+      "type": "class",
+      "name": "Config",
+      "filePath": "src/vigil/config.py",
+      "summary": "class Config (src/vigil/config.py:15) ## Methods - from_env() -> Config",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-835e16cb426e",
+      "type": "class",
+      "name": "IngestError",
+      "filePath": "src/vigil/ingest.py",
+      "summary": "class IngestError(Exception) (src/vigil/ingest.py:57)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-1a99178fa2cf",
+      "type": "class",
+      "name": "IngestStats",
+      "filePath": "src/vigil/ingest.py",
+      "summary": "class IngestStats (src/vigil/ingest.py:62)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-942fc5f0cdf2",
+      "type": "class",
+      "name": "HealthResponse",
+      "filePath": "src/vigil/api.py",
+      "summary": "class HealthResponse(BaseModel) (src/vigil/api.py:84)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-eabad62930ee",
+      "type": "class",
+      "name": "BaselineStore",
+      "filePath": "src/vigil/baseline.py",
+      "summary": "class BaselineStore (src/vigil/baseline.py:72) ## Methods - align_bucket(self, ts: datetime) -> datetime",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 11,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-6111e2059a88",
+      "type": "class",
+      "name": "MetricBucket",
+      "filePath": "src/vigil/types.py",
+      "summary": "class MetricBucket (src/vigil/types.py:33)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-c18e131f85f2",
+      "type": "class",
+      "name": "AnomalyList",
+      "filePath": "src/vigil/api.py",
+      "summary": "class AnomalyList(BaseModel) (src/vigil/api.py:73)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-2f66938cb90e",
+      "type": "class",
+      "name": "AnomalyOut",
+      "filePath": "src/vigil/api.py",
+      "summary": "class AnomalyOut(BaseModel) (src/vigil/api.py:37) ## Methods - from_anomaly(a: Anomaly) -> AnomalyOut",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-83b4949bd992",
+      "type": "class",
+      "name": "DismissRequest",
+      "filePath": "src/vigil/api.py",
+      "summary": "class DismissRequest(BaseModel) (src/vigil/api.py:80)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-bade283916c0",
+      "type": "class",
+      "name": "Anomaly",
+      "filePath": "src/vigil/types.py",
+      "summary": "class Anomaly (src/vigil/types.py:69)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-83af41921d06",
+      "type": "class",
+      "name": "AnomalyKey",
+      "filePath": "src/vigil/types.py",
+      "summary": "class AnomalyKey (src/vigil/types.py:15) ## Methods - stable_str(self) -> str",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    },
+    {
+      "id": "code-sym-vigil-eae08e78f00b",
+      "type": "class",
+      "name": "BaselineSnapshot",
+      "filePath": "src/vigil/types.py",
+      "summary": "class BaselineSnapshot (src/vigil/types.py:51)",
+      "tags": [
+        "code",
+        "python"
+      ],
+      "complexity": 1,
+      "languageNotes": {
+        "language": "Python",
+        "kindexType": "concept",
+        "toolTier": ""
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "code-sym-vigil-ba8af4c5e049",
+      "target": "code-mod-vigil-25dc48390531",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-835e16cb426e",
+      "target": "code-mod-vigil-9e4449f82f9b",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-1a99178fa2cf",
+      "target": "code-mod-vigil-9e4449f82f9b",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-942fc5f0cdf2",
+      "target": "code-mod-vigil-7a440be1b83d",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-eabad62930ee",
+      "target": "code-mod-vigil-5496c4d6925c",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-6111e2059a88",
+      "target": "code-mod-vigil-869560954257",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-c18e131f85f2",
+      "target": "code-mod-vigil-7a440be1b83d",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-2f66938cb90e",
+      "target": "code-mod-vigil-7a440be1b83d",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-83b4949bd992",
+      "target": "code-mod-vigil-7a440be1b83d",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-bade283916c0",
+      "target": "code-mod-vigil-869560954257",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-83af41921d06",
+      "target": "code-mod-vigil-869560954257",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    },
+    {
+      "source": "code-sym-vigil-eae08e78f00b",
+      "target": "code-mod-vigil-869560954257",
+      "type": "contains",
+      "direction": "outbound",
+      "weight": 0.6
+    }
+  ],
+  "layers": [
+    {
+      "id": "api",
+      "name": "Api",
+      "description": "Kindex-inferred api layer.",
+      "nodeIds": [
+        "code-mod-vigil-7a440be1b83d"
+      ]
+    },
+    {
+      "id": "core",
+      "name": "Core",
+      "description": "Kindex-inferred core layer.",
+      "nodeIds": [
+        "code-mod-vigil-069327c12223",
+        "code-mod-vigil-1cb51d9325c6",
+        "code-mod-vigil-25dc48390531",
+        "code-mod-vigil-5496c4d6925c",
+        "code-mod-vigil-7d9229b9e65e",
+        "code-mod-vigil-869560954257",
+        "code-mod-vigil-9e4449f82f9b",
+        "code-mod-vigil-c296d9fbf82f"
+      ]
+    },
+    {
+      "id": "domain",
+      "name": "Domain",
+      "description": "Kindex-inferred domain layer.",
+      "nodeIds": [
+        "code-sym-vigil-1a99178fa2cf",
+        "code-sym-vigil-2f66938cb90e",
+        "code-sym-vigil-6111e2059a88",
+        "code-sym-vigil-835e16cb426e",
+        "code-sym-vigil-83af41921d06",
+        "code-sym-vigil-83b4949bd992",
+        "code-sym-vigil-942fc5f0cdf2",
+        "code-sym-vigil-ba8af4c5e049",
+        "code-sym-vigil-bade283916c0",
+        "code-sym-vigil-c18e131f85f2",
+        "code-sym-vigil-eabad62930ee",
+        "code-sym-vigil-eae08e78f00b"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Api",
+      "description": "Review 1 node(s) in the Api layer.",
+      "nodeIds": [
+        "code-mod-vigil-7a440be1b83d"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Core",
+      "description": "Review 8 node(s) in the Core layer.",
+      "nodeIds": [
+        "code-mod-vigil-069327c12223",
+        "code-mod-vigil-1cb51d9325c6",
+        "code-mod-vigil-25dc48390531",
+        "code-mod-vigil-5496c4d6925c",
+        "code-mod-vigil-7d9229b9e65e",
+        "code-mod-vigil-869560954257",
+        "code-mod-vigil-9e4449f82f9b",
+        "code-mod-vigil-c296d9fbf82f"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Domain",
+      "description": "Review 12 node(s) in the Domain layer.",
+      "nodeIds": [
+        "code-sym-vigil-1a99178fa2cf",
+        "code-sym-vigil-2f66938cb90e",
+        "code-sym-vigil-6111e2059a88",
+        "code-sym-vigil-835e16cb426e",
+        "code-sym-vigil-83af41921d06",
+        "code-sym-vigil-83b4949bd992",
+        "code-sym-vigil-942fc5f0cdf2",
+        "code-sym-vigil-ba8af4c5e049",
+        "code-sym-vigil-bade283916c0",
+        "code-sym-vigil-c18e131f85f2",
+        "code-sym-vigil-eabad62930ee",
+        "code-sym-vigil-eae08e78f00b"
+      ]
+    }
+  ]
+}
