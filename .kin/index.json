@@ -1,0 +1,243 @@
+{
+  "domains": [
+    "code",
+    "python"
+  ],
+  "node_count": 21,
+  "nodes": [
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-vigil-069327c12223",
+      "title": "src/vigil/persist.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-vigil-1cb51d9325c6",
+      "title": "src/vigil/__init__.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-vigil-25dc48390531",
+      "title": "src/vigil/config.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-vigil-5496c4d6925c",
+      "title": "src/vigil/baseline.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-vigil-7a440be1b83d",
+      "title": "src/vigil/api.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-vigil-7d9229b9e65e",
+      "title": "src/vigil/detect.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-vigil-869560954257",
+      "title": "src/vigil/types.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-vigil-9e4449f82f9b",
+      "title": "src/vigil/ingest.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-mod-vigil-c296d9fbf82f",
+      "title": "src/vigil/cli.py",
+      "type": "artifact",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-1a99178fa2cf",
+      "title": "IngestStats",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-2f66938cb90e",
+      "title": "AnomalyOut",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-6111e2059a88",
+      "title": "MetricBucket",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-835e16cb426e",
+      "title": "IngestError",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-83af41921d06",
+      "title": "AnomalyKey",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-83b4949bd992",
+      "title": "DismissRequest",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-942fc5f0cdf2",
+      "title": "HealthResponse",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-ba8af4c5e049",
+      "title": "Config",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-bade283916c0",
+      "title": "Anomaly",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-c18e131f85f2",
+      "title": "AnomalyList",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-eabad62930ee",
+      "title": "BaselineStore",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    },
+    {
+      "domains": [
+        "code",
+        "python"
+      ],
+      "id": "code-sym-vigil-eae08e78f00b",
+      "title": "BaselineSnapshot",
+      "type": "concept",
+      "updated_at": "2026-05-30T14:51:01",
+      "weight": 0.5
+    }
+  ],
+  "repo": "vigil",
+  "source_updated_at": "2026-05-30T14:51:01",
+  "version": 1
+}
